@@ -7,6 +7,7 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(router);
 
-app.listen(process.env.PORT || 3333, () => {
-  console.log('[ Server is running ]');
+const port = process.env.PORT || 3333 ;
+app.listen(port, () => {
+  console.log('[ Server is running ]', [port]);
 });
