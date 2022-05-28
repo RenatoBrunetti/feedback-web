@@ -12,6 +12,10 @@ interface FeedbackInputType {
   screenshot?: string;
 }
 
+router.get('/healthcheck', (req: Request, res: Response) => {
+  return res.status(200).send();
+});
+
 router.post('/feedbacks', async (req: Request, res: Response) => {
   const { type, comment, screenshot }: FeedbackInputType = req.body;
 
