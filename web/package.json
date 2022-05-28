@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint ./src --ext .ts",
+    "lint:fix": "eslint ./src --ext .ts --fix"
   },
   "dependencies": {
     "@headlessui/react": "^1.6.1",
@@ -19,8 +21,11 @@
     "@tailwindcss/forms": "^0.5.1",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
+    "@typescript-eslint/parser": "^5.26.0",
     "@vitejs/plugin-react": "^1.3.0",
     "autoprefixer": "^10.4.7",
+    "eslint": "^8.16.0",
     "postcss": "^8.4.13",
     "tailwind-scrollbar": "^1.3.1",
     "tailwindcss": "^3.0.24",
