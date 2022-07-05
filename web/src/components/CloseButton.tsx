@@ -7,4 +7,4 @@ export function CloseButton() {
       <X weight='bold' className='w-4 h-4' />
     </Popover.Button>
   );
-};
+}

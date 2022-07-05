@@ -1,10 +1,10 @@
-import { ArrowLeft } from "phosphor-react";
-import { FormEvent, useState } from "react";
-import { FeedbackType, feedbackTypes } from "..";
-import { api } from "../../../lib/api";
-import { CloseButton } from "../../CloseButton";
-import { Loading } from "../../Loading";
-import { ScreenshotButton } from "../ScreenshotButton";
+import { ArrowLeft } from 'phosphor-react';
+import { FormEvent, useState } from 'react';
+import { FeedbackType, feedbackTypes } from '..';
+import { api } from '../../../lib/api';
+import { CloseButton } from '../../CloseButton';
+import { Loading } from '../../Loading';
+import { ScreenshotButton } from '../ScreenshotButton';
 
 interface FeedbackContentStepProps {
   feedbackType: FeedbackType;
@@ -48,7 +48,7 @@ export function FeedbackContentStep({
           className='top-5 left-5 absolute text-zinc-400 hover:text-zinc-100'
           onClick={onFeedbackRestartRequested}
         >
-          <ArrowLeft weight="bold" className='w-4 h-4' />
+          <ArrowLeft weight='bold' className='w-4 h-4' />
         </button>
 
         <span className='text-xl leading-6 flex items-center gap-2'>
@@ -65,7 +65,7 @@ export function FeedbackContentStep({
           onChange={event => setComment(event.target.value)}
         />
 
-        <footer className="flex gap-2 mt-2">
+        <footer className='flex gap-2 mt-2'>
           <ScreenshotButton
             screenshot={screenshot}
             onScreenshotTook={setScreenshot}
@@ -82,4 +82,4 @@ export function FeedbackContentStep({
       </form>
     </>
   );
-};
+}

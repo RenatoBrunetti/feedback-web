@@ -1,7 +1,7 @@
-import { Camera, Trash } from "phosphor-react";
+import { Camera, Trash } from 'phosphor-react';
 import html2canvas from 'html2canvas';
-import { useState } from "react";
-import { Loading } from "../Loading";
+import { useState } from 'react';
+import { Loading } from '../Loading';
 
 interface ScreenshotButtonProps {
   screenshot: string | null;
@@ -37,7 +37,7 @@ export function ScreenshotButton({
         }}
         onClick={() => onScreenshotTook(null)}
       >
-        <Trash weight="fill" />
+        <Trash weight='fill' />
       </button>
     );
   }
